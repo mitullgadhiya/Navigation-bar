@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Homepage</title>
+	<script src="https://kit.fontawesome.com/300f5db188.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+
+	<div class="navbar">
+		<ul>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fas fa-home"></i></span>
+				<span class="title">Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+				<span class="title">Exchange</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-stack-exchange" aria-hidden="true"></i></span>
+				<span class="title">Liquidity</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-truck" aria-hidden="true"></i></span>
+				<span class="title">Farm</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-rocket" aria-hidden="true"></i></span>
+				<span class="title">Launchpool</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+				<span class="title">Referral Program</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+				<span class="title">Competition</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<span class="icon"><i class="fa fa-tags" aria-hidden="true"></i></span>
+				<span class="title">More</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="toggle" onclick="toggleMenu()"></div>
+	<script type="text/javascript">
+		function toggleMenu(){
+			let navbar = document.querySelector('.navbar');
+			let toggle = document.querySelector('.toggle');
+			navbar.classList.toggle('active');
+			toggle.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
